@@ -22,4 +22,11 @@ public @interface ExcelColumn {
      */
     boolean nullable() default true;
 
+    /**
+     * Optional Order Number to sort the Columns while writing to file.
+     * 
+     * @return
+     */
+    int order() default 0;
+
 }
